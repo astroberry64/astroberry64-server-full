@@ -8,7 +8,7 @@ Homepage: http://www.astroberry.io/
 
 Package: astroberry-server-full
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, indi-full, kstars-bleeding, astrometry.net, gsc, phd2, oacapture, ser-player, gpredict, indi-astroberry-amh, indi-astroberry-diy, indi-astroberry-piface, astroberry-server-wui, astroberry-server-hotspot, astroberry-server-sysmod
+Depends: ${shlibs:Depends}, ${misc:Depends}, astroberry-server-wui, astroberry-server-sysmod, astroberry-server-hotspot, indi-full, kstars-bleeding, astrometry.net, gsc, phd2, oacapture, ser-player, gpredict, indi-astroberry-amh, indi-astroberry-diy, indi-astroberry-piface
 Description: Astroberry Server is a ready to use astronomy
  desktop system for Raspberry Pi.
  This is a meta-package that installs all packages and
