@@ -1,3 +1,28 @@
+astroberry-server-full (2.0.3) buster; urgency=medium
+
+  * Fix for Raspberry Pi 4B 8GB version
+  * KStars 3.4.3
+  * PHD2 2.6.9
+  * Updated INDI drivers
+  * Forked INDI web manager
+  * Fixes and improvements to web user interface
+  * Default pi account unlocked
+
+ -- Radek Kaczorek <rkaczorek@gmail.com>  Wed, 9 Sep 2020 00:15:16 +0200
+
+astroberry-server-full (2.0.2) buster; urgency=medium
+
+  * Operating system updated
+  * KStars 3.4.0
+  * libindi 1.8.4
+  * virtualgps if you don't use hardware GPS
+  * phdlogview for viewing PHD2 logs
+  * indiwebmanagerapp application as an alternative to INDI Web Manager
+  * chrony for time synchronization with GPS
+  * gwenview for viewing FITS
+
+ -- Radek Kaczorek <rkaczorek@gmail.com>  Wed, 10 Jun 2020 02:54:33 +0200
+
 astroberry-server-full (2.0.1) buster; urgency=medium
 
   * Adding phdlogview, gwenview, indiwebmanagerapp
