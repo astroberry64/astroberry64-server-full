@@ -1,3 +1,9 @@
+astroberry-server-full (2.0.3-1) buster; urgency=medium
+
+  * Added indi-weather-mqtt
+
+ -- Radek Kaczorek <rkaczorek@gmail.com>  Fri, 27 Aug 2021 19:12:29 +0000
+
 astroberry-server-full (2.0.3) buster; urgency=medium
 
   * Fix for Raspberry Pi 4B 8GB version
