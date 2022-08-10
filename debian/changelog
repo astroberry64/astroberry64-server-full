@@ -1,3 +1,9 @@
+astroberry-server-full (2.0.4) UNRELEASED; urgency=medium
+
+  * Removed indi-astroberry-amh
+
+ -- Radek Kaczorek <rkaczorek@gmail.com>  Wed, 10 Aug 2022 18:23:23 +0000
+
 astroberry-server-full (2.0.3-1) buster; urgency=medium
 
   * Added indi-weather-mqtt
