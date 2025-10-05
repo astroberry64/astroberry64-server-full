@@ -1,15 +1,16 @@
-Source: astroberry-server-full
+Source: astroberry64-server-full
 Section: science
 Priority: extra
-Maintainer: Radek Kaczorek <rkaczorek@gmail.com>
+Maintainer: Astroberry64 Team <astroberry64@speckle.red>
+Original-Maintainer: Radek Kaczorek <rkaczorek@gmail.com>
 Build-Depends: debhelper (>= 9), cdbs, cmake (>= 2.4.7), cmake
 Standards-Version: 3.9.1
-Homepage: http://www.astroberry.io/
+Homepage: https://github.com/astroberry64
 
-Package: astroberry-server-full
+Package: astroberry64-server-full
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, astroberry-server-artwork, astroberry-server-wui, astroberry-server-sysmod, indi-full, libindi-dev, kstars-bleeding, astrometry.net, gsc, phd2, phdlogview, oacapture, firecapture, ser-player, gpredict, indi-astroberry-diy, indi-astroberry-piface, indi-weather-mqtt, virtualgps, gwenview, indiwebmanagerapp
-Description: Astroberry Server is a ready to use astronomy
+Depends: ${shlibs:Depends}, ${misc:Depends}, astroberry64-server-artwork, astroberry64-server-wui, astroberry64-server-sysmod, indi-full, libindi-dev, kstars-bleeding, astrometry.net, gsc, phd2, phdlogview, oacapture, firecapture, ser-player, gpredict, indi-astroberry64-diy, indi-astroberry64-piface, indi-weather-mqtt, virtualgps, gwenview, indiwebmanagerapp
+Description: Astroberry64 Server is a ready to use astronomy
  desktop system for Raspberry Pi.
  This is a meta-package that installs all packages and
  configuration needed to run the system
