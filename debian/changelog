@@ -1,3 +1,14 @@
+astroberry64-server-full (2.0.4-astroberry64.3) trixie; urgency=medium
+
+  * Create minimal package set for infrastructure testing
+  * Add astroberry64-server-hotspot dependency
+  * Temporarily disable INDI/KStars packages (not yet built for Trixie)
+  * Temporarily disable driver packages (not yet forked)
+  * Temporarily disable optional astronomy tools
+  * Minimal dependencies: artwork, sysmod, hotspot, virtualgps, gwenview
+
+ -- Astroberry64 Team <astroberry64@speckle.red>  Tue, 08 Oct 2025 14:00:00 +0200
+
 astroberry64-server-full (2.0.4-astroberry64.2) trixie; urgency=medium
 
   * Migrate from Debian Bookworm to Trixie

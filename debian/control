@@ -9,8 +9,31 @@ Homepage: https://github.com/astroberry64
 
 Package: astroberry64-server-full
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, astroberry64-server-artwork, astroberry64-server-wui, astroberry64-server-sysmod, indi-full, libindi-dev, kstars-bleeding, astrometry.net, gsc, phd2, phdlogview, oacapture, firecapture, ser-player, gpredict, indi-astroberry64-diy, indi-astroberry64-piface, indi-weather-mqtt, virtualgps, gwenview, indiwebmanagerapp
+Depends: ${shlibs:Depends}, ${misc:Depends}, astroberry64-server-artwork, astroberry64-server-sysmod, astroberry64-server-hotspot, virtualgps, gwenview
+# Temporarily disabled until INDI/KStars packages are available:
+#   astroberry64-server-wui (requires INDI)
+#   indi-full (replaced by indi-bin, not yet built)
+#   libindi-dev (not yet built for latest version)
+#   kstars-bleeding (not yet built)
+#   phd2 (not yet built)
+#   phdlogview (not yet built)
+#   indiwebmanagerapp (not yet sourced)
+#   gsc (Guide Star Catalog - not yet built)
+# Temporarily disabled - driver packages not yet forked:
+#   indi-astroberry64-diy
+#   indi-astroberry64-piface
+#   indi-weather-mqtt
+# Temporarily disabled - optional packages:
+#   astrometry.net (will add later)
+#   ser-player (will add later)
+#   gpredict (will add later)
+# Permanently disabled - not available for arm64:
+#   oacapture (armhf only)
+#   firecapture (availability unclear)
 Description: Astroberry64 Server is a ready to use astronomy
  desktop system for Raspberry Pi.
  This is a meta-package that installs all packages and
- configuration needed to run the system
+ configuration needed to run the system.
+ NOTE: This is currently a minimal installation for testing.
+ INDI, KStars, PHD2 and other astronomy software will be added
+ in future releases.
