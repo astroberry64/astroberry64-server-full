@@ -9,9 +9,8 @@ Homepage: https://github.com/astroberry64
 
 Package: astroberry64-server-full
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, astroberry64-server-artwork, astroberry64-server-sysmod, astroberry64-server-hotspot, virtualgps, gwenview
+Depends: ${shlibs:Depends}, ${misc:Depends}, astroberry64-server-artwork, astroberry64-server-sysmod, astroberry64-server-hotspot, astroberry64-server-wui, virtualgps, gwenview
 # Temporarily disabled until INDI/KStars packages are available:
-#   astroberry64-server-wui (requires INDI)
 #   indi-full (replaced by indi-bin, not yet built)
 #   libindi-dev (not yet built for latest version)
 #   kstars-bleeding (not yet built)

@@ -1,3 +1,11 @@
+astroberry64-server-full (2.0.4-astroberry64.4) trixie; urgency=medium
+
+  * Add astroberry64-server-wui back to dependencies
+  * WUI now installable without INDI (INDI dependencies temporarily removed)
+  * Web interface will be functional with limited features until INDI available
+
+ -- Astroberry64 Team <astroberry64@speckle.red>  Tue, 08 Oct 2025 17:45:00 +0200
+
 astroberry64-server-full (2.0.4-astroberry64.3) trixie; urgency=medium
 
   * Create minimal package set for infrastructure testing
