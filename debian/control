@@ -9,25 +9,7 @@ Homepage: https://github.com/astroberry64
 
 Package: astroberry64-server-full
 Architecture: all
-# NOTE: Dependencies use leading commas for clean git diffs.
-# When adding a package, only one line changes instead of two.
-# Format: One dependency per line with machine-readable @markers.
-Depends: ${shlibs:Depends}
-, ${misc:Depends}
-, astroberry64-server-artwork
-, astroberry64-server-hotspot
-, astroberry64-server-sysmod
-, astroberry64-server-wui
-, indi-bin
-, kstars-bleeding
-, phd2
-, astrometry-data-2mass
-, astrometry-data-tycho2
-, astrometry.net
-, gpredict
-, gwenview
-, ser-player
-, virtualgps
+Depends: ${shlibs:Depends}, ${misc:Depends}, astroberry64-server-artwork, astroberry64-server-hotspot, astroberry64-server-sysmod, astroberry64-server-wui, indi-bin, kstars-bleeding, phd2, astrometry-data-2mass, astrometry-data-tycho2, astrometry.net, gpredict, gwenview, ser-player, virtualgps
 # Optional development packages:
 # @status:disabled @category:development @source:astroberry64-repo @priority:optional
 #   libindi-dev (only needed for building drivers, not for runtime)
