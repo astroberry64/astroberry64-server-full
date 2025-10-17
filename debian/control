@@ -14,24 +14,13 @@ Architecture: all
 # Format: One dependency per line with machine-readable @markers.
 Depends: ${shlibs:Depends}
 , ${misc:Depends}
-#
-# Core astroberry64 packages:
-# @category:core @source:astroberry64-repo
-#, astroberry64-external # TODO: this will bring ao. astro-fetch
-#, astroberry64-server   # this is documentation/project, not to install on the RPI
 , astroberry64-server-artwork
 , astroberry64-server-hotspot
 , astroberry64-server-sysmod
 , astroberry64-server-wui
-#
-# External astronomy packages:
-# @category:astronomy @source:astroberry64-repo
 , indi-bin
 , kstars-bleeding
 , phd2
-#
-# Standard Debian packages:
-# @category:utilities @source:debian
 , astrometry-data-2mass
 , astrometry-data-tycho2
 , astrometry.net
@@ -39,7 +28,6 @@ Depends: ${shlibs:Depends}
 , gwenview
 , ser-player
 , virtualgps
-#
 # Optional development packages:
 # @status:disabled @category:development @source:astroberry64-repo @priority:optional
 #   libindi-dev (only needed for building drivers, not for runtime)
