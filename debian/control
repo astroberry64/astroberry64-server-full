@@ -9,22 +9,46 @@ Homepage: https://github.com/astroberry64
 
 Package: astroberry64-server-full
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, astroberry64-server-artwork, astroberry64-server-sysmod, astroberry64-server-hotspot, astroberry64-server-wui, virtualgps, gwenview, indi-bin, kstars-bleeding
-# Temporarily disabled until packages are available:
-#   libindi-dev (optional - only needed for building drivers)
-#   phd2 (not yet built)
+# NOTE: Dependencies use leading commas for clean git diffs.
+# When adding a package, only one line changes instead of two.
+# Format: One dependency per line with machine-readable @markers.
+Depends: ${shlibs:Depends}
+, ${misc:Depends}
+# Core astroberry64 packages:
+# @category:core @source:astroberry64-repo
+, astroberry64-server-artwork
+, astroberry64-server-sysmod
+, astroberry64-server-hotspot
+, astroberry64-server-wui
+# Astronomy packages:
+# @category:astronomy @source:astroberry64-repo
+, indi-bin
+, kstars-bleeding
+, phd2
+# Standard Debian packages:
+# @category:utilities @source:debian
+, virtualgps
+, gwenview
+# Optional development packages:
+# @status:disabled @category:development @source:astroberry64-repo @priority:optional
+#   libindi-dev (only needed for building drivers, not for runtime)
+# Future astronomy packages (not yet built/sourced):
+# @status:disabled @category:future @source:astroberry64-repo @priority:wanted
 #   phdlogview (not yet built)
+# @status:disabled @category:future @source:unknown @priority:wanted
 #   indiwebmanagerapp (not yet sourced)
 #   gsc (Guide Star Catalog - not yet built)
-# Temporarily disabled - driver packages not yet forked:
+# @status:disabled @category:future @source:debian @priority:wanted
+#   astrometry.net (plate solving)
+#   ser-player (SER video player)
+#   gpredict (satellite tracking)
+# Driver packages (not yet forked):
+# @status:disabled @category:drivers @source:astroberry64-repo @priority:wanted
 #   indi-astroberry64-diy
 #   indi-astroberry64-piface
 #   indi-weather-mqtt
-# Temporarily disabled - optional packages:
-#   astrometry.net (will add later)
-#   ser-player (will add later)
-#   gpredict (will add later)
-# Permanently disabled - not available for arm64:
+# Permanently unavailable (architecture incompatible):
+# @status:disabled @category:incompatible @source:none @priority:wontfix
 #   oacapture (armhf only)
 #   firecapture (availability unclear)
 Description: Astroberry64 Server is a ready to use astronomy
