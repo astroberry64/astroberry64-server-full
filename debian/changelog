@@ -1,3 +1,11 @@
+astroberry64-server-full (2.0.4-astroberry64.6) trixie; urgency=medium
+
+  * Remove astrometry index data packages from dependencies
+  * Keep astrometry.net but exclude astrometry-data-2mass and astrometry-data-tycho2
+  * Index files download too slowly during installation (to be handled separately)
+
+ -- Astroberry64 Team <astroberry64@speckle.red>  Fri, 17 Oct 2025 21:00:00 +0200
+
 astroberry64-server-full (2.0.4-astroberry64.5) trixie; urgency=medium
 
   * Enable INDI and KStars astronomy packages (now available in repo)
