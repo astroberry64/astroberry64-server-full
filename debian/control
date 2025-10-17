@@ -14,47 +14,55 @@ Architecture: all
 # Format: One dependency per line with machine-readable @markers.
 Depends: ${shlibs:Depends}
 , ${misc:Depends}
+#
 # Core astroberry64 packages:
 # @category:core @source:astroberry64-repo
+#, astroberry64-external # TODO: this will bring ao. astro-fetch
+#, astroberry64-server   # this is documentation/project, not to install on the RPI
 , astroberry64-server-artwork
-, astroberry64-server-sysmod
 , astroberry64-server-hotspot
+, astroberry64-server-sysmod
 , astroberry64-server-wui
-# Astronomy packages:
+#
+# External astronomy packages:
 # @category:astronomy @source:astroberry64-repo
 , indi-bin
 , kstars-bleeding
 , phd2
+#
 # Standard Debian packages:
 # @category:utilities @source:debian
-, virtualgps
+, astrometry-data-2mass
+, astrometry-data-tycho2
+, astrometry.net
+, gpredict
 , gwenview
+, ser-player
+, virtualgps
+#
 # Optional development packages:
 # @status:disabled @category:development @source:astroberry64-repo @priority:optional
 #   libindi-dev (only needed for building drivers, not for runtime)
+#
 # Future astronomy packages (not yet built/sourced):
 # @status:disabled @category:future @source:astroberry64-repo @priority:wanted
-#   phdlogview (not yet built)
-# @status:disabled @category:future @source:unknown @priority:wanted
-#   indiwebmanagerapp (not yet sourced)
-#   gsc (Guide Star Catalog - not yet built)
-# @status:disabled @category:future @source:debian @priority:wanted
-#   astrometry.net (plate solving)
-#   ser-player (SER video player)
-#   gpredict (satellite tracking)
+#   phdlogview (https://github.com/agalasso/phdlogview - not yet built)
+#   indiwebmanager (https://github.com/knro/indiwebmanager - not yet built)
+#   gsc (https://launchpad.net/gsc - Guide Star Catalog - not yet built)
+#
 # Driver packages (not yet forked):
 # @status:disabled @category:drivers @source:astroberry64-repo @priority:wanted
 #   indi-astroberry64-diy
 #   indi-astroberry64-piface
 #   indi-weather-mqtt
+#
 # Permanently unavailable (architecture incompatible):
 # @status:disabled @category:incompatible @source:none @priority:wontfix
 #   oacapture (armhf only)
 #   firecapture (availability unclear)
 Description: Astroberry64 Server is a ready to use astronomy
- desktop system for Raspberry Pi.
+ desktop system for 64-bit Raspberry Pi.
  This is a meta-package that installs all packages and
  configuration needed to run the system.
  Includes INDI server and KStars planetarium software.
- Additional astronomy software (PHD2, driver packages, etc.)
- will be added in future releases.
+
