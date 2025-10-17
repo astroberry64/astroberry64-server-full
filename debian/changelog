@@ -1,3 +1,14 @@
+astroberry64-server-full (2.0.4-astroberry64.5) trixie; urgency=medium
+
+  * Enable INDI and KStars astronomy packages (now available in repo)
+  * Add indi-bin, kstars-bleeding, phd2
+  * Add plate solving: astrometry.net, astrometry-data-2mass, astrometry-data-tycho2
+  * Add satellite tracking: gpredict
+  * Add SER video player: ser-player
+  * All major astronomy packages now enabled and functional
+
+ -- Astroberry64 Team <astroberry64@speckle.red>  Fri, 17 Oct 2025 20:30:00 +0200
+
 astroberry64-server-full (2.0.4-astroberry64.4) trixie; urgency=medium
 
   * Add astroberry64-server-wui back to dependencies
